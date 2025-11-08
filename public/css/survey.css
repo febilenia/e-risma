@@ -1,0 +1,174 @@
+/* ===== Base Styles ===== */
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+/* ===== Survey Content ===== */
+.survey-content {
+    max-height: none;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.survey-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.survey-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.survey-content::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.3);
+    border-radius: 10px;
+}
+
+.survey-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(59, 130, 246, 0.5);
+}
+
+@media (min-width: 768px) and (min-height: 700px) {
+    .survey-content {
+        max-height: calc(100vh - 320px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .survey-content {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+/* ===== Simple Background ===== */
+.wave-background { 
+    background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%); 
+    position: relative;
+}
+
+/* ===== Glass Effects ===== */
+.glass-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .glass-container {
+        backdrop-filter: blur(4px);
+    }
+}
+
+.bg-white.rounded-2xl {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+/* ===== Z-Index Layers ===== */
+.min-h-screen {
+    position: relative;
+    z-index: 10;
+}
+
+.relative {
+    position: relative;
+    z-index: 15;
+}
+
+.relative > span.absolute {
+    z-index: 20;
+}
+
+.relative > input,
+.relative > select {
+    position: relative;
+    z-index: 19;
+    background: white;
+}
+
+input, select, textarea, button {
+    position: relative;
+    pointer-events: auto;
+}
+
+form {
+    position: relative;
+    z-index: 15;
+}
+
+/* ===== Simple Animations ===== */
+.slide-in { 
+    animation: slideIn 0.3s ease-out; 
+}
+
+@keyframes slideIn { 
+    from { opacity: 0; transform: translateY(10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+@keyframes scale-in {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animate-scale-in {
+    animation: scale-in 0.3s ease-out;
+}
+
+/* ===== Custom scrollbar ===== */
+.overflow-y-auto::-webkit-scrollbar { 
+    width: 4px; 
+}
+
+.overflow-y-auto::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+    border-radius: 4px; 
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb { 
+    background: #c1c1c1; 
+    border-radius: 4px; 
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover { 
+    background: #a1a1a1; 
+}
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 640px) {
+    .min-h-\[60px\] { 
+        min-height: 50px; 
+    }
+    .text-2xl { 
+        font-size: 1.5rem; 
+    }
+    .px-8 { 
+        padding-left: 1.5rem; 
+        padding-right: 1.5rem; 
+    }
+}
+/* ===== Progress Bar Width Dynamic ===== */
+.progress-bar-dynamic {
+    transition: width 0.3s ease-out;
+}
+
+/* ===== Hidden Submit Button ===== */
+.hidden-submit {
+    display: none;
+}

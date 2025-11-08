@@ -1,0 +1,16 @@
+/* ===== IMPORT harus di ATAS ===== */
+
+/* Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* DataTables Bootstrap 5 */
+@import 'datatables.net-bs5/css/dataTables.bootstrap5.min.css';
+
+/* Flatpickr */
+@import 'flatpickr/dist/flatpickr.min.css';
+
+/* ===== Tailwind di BAWAH ===== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

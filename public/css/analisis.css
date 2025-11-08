@@ -1,0 +1,179 @@
+/* ===== DataTables Pagination ===== */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 0.75rem;
+    margin-left: 2px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #0d6efd;
+    color: #fff !important;
+    border-color: #0d6efd;
+}
+
+/* ===== Table Styles ===== */
+.table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+}
+
+/* ===== Badge Orange ===== */
+.badge-orange {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+/* ===== Modal Body ===== */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* ===== Table Text Wrap ===== */
+#analisis-table th,
+#analisis-table td {
+    white-space: normal !important;
+    word-break: break-word;
+}
+
+#analisis-table {
+    width: 100% !important;
+    table-layout: auto;
+}
+
+@media (max-width: 576px) {
+    #analisis-table th,
+    #analisis-table td {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+/* ===== Chart Items ===== */
+.chart-item {
+    height: auto;
+    min-height: 320px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-item h6 {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: block;
+}
+
+.chart-item .chart-canvas-wrapper {
+    flex: 1;
+    min-height: 220px;
+    position: relative;
+}
+
+/* ===== Date Range Input ===== */
+.date-range-input {
+    cursor: pointer;
+}
+
+/* ===== Fullscreen Modal ===== */
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+}
+
+.modal.modal-fullscreen .modal-content {
+    height: 100vh;
+    border: 0;
+    border-radius: 0;
+}
+
+.modal.modal-fullscreen .modal-body {
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+}
+
+/* ===== Custom Width Utilities ===== */
+.filter-date-group {
+    width: 280px;
+}
+
+.w-50px {
+    width: 50px !important;
+}
+
+.w-80px {
+    width: 80px !important;
+}
+
+.w-100px {
+    width: 100px !important;
+}
+
+.w-120px {
+    width: 120px !important;
+}
+
+.w-40-percent {
+    width: 40% !important;
+}
+
+/* ===== Table Border Top ===== */
+.table-border-top {
+    border-top: 2px solid #dee2e6 !important;
+}
+
+@media (max-width: 576px) {
+    .filter-date-group {
+        width: 100%;
+    }
+}
+/* ===== Saran Box Styling ===== */
+.saran-box {
+    border-radius: 5px;
+}
+
+.saran-alert-text {
+    font-size: 0.85rem;
+}
+
+.saran-text-wrap {
+    white-space: pre-wrap;
+}
+
+/* ✅ TAMBAHKAN INI - Buat container saran bisa scroll sendiri */
+#saranList {
+    max-height: 400px; /* Tinggi maksimal area saran */
+    overflow-y: auto; /* Scroll vertikal */
+    padding-right: 0.5rem; /* Biar scrollbar ga terlalu mepet */
+}
+
+/* Custom scrollbar untuk saran list */
+#saranList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#saranList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#saranList::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+#saranList::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}

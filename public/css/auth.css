@@ -1,0 +1,105 @@
+/* ===== Base Auth Styles ===== */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Simple Background ===== */
+.wave-background { 
+    background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%); 
+    position: relative;
+}
+
+/* ===== Glass Container ===== */
+.glass-container {
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 8px 32px rgba(0,0,0,.2);
+}
+
+/* ===== Glass Input ===== */
+.glass-input {
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,.2);
+    color: #fff;
+}
+
+.glass-input::placeholder { 
+    color: rgba(255,255,255,.7); 
+}
+
+.glass-input:focus {
+    background: rgba(255,255,255,.25);
+    border-color: #FACC15;
+    box-shadow: 0 0 20px rgba(250,204,21,.3);
+    outline: none;
+}
+
+/* ===== Simple Animations ===== */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes fadeIn { 
+    0% { opacity: 0; } 
+    100% { opacity: 1; } 
+}
+
+@keyframes slideUp { 
+    0% { opacity: 0; transform: translateY(20px); } 
+    100% { opacity: 1; transform: translateY(0); } 
+}
+
+/* ===== Toast Notification ===== */
+#toast-sukses {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    z-index: 9999;
+}
+
+#toast-sukses .glass-container {
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(20px);
+    min-width: 240px;
+}
+
+#toast-sukses-bar {
+    height: 0.25rem;
+    margin-top: 0.75rem;
+    background: rgba(255,255,255,0.3);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+/* ===== Yellow Button ===== */
+.btn-yellow {
+    background: #1E3A8A !important;
+    color: white !important;
+}
+
+.btn-yellow:hover {
+    background: #1E3A8A !important;
+    box-shadow: 0 10px 25px rgba(250, 204, 21, 0.4);
+}
+/* ===== Icon Yellow Color ===== */
+.icon-yellow {
+    color: #FACC15;
+}
+
+/* ===== Transform Origin Left ===== */
+.transform-origin-left {
+    transform-origin: left;
+}
+
+/* ===== SVG Icon White Color ===== */
+.svg-icon-white {
+    color: white;
+}

@@ -1,0 +1,444 @@
+/* ===== Base PDF Styles ===== */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'DejaVu Sans', Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+    padding: 25px 30px;
+}
+
+/* ===== Header ===== */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1E40AF;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    color: #1E40AF;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.header h2 {
+    margin: 0 0 12px 0;
+    color: #1E40AF;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.header p {
+    margin: 10px 0 0 0;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.header-subtitle {
+    margin: 10px 0 0 0;
+}
+
+/* ===== Info Meta ===== */
+.info-meta {
+    margin-bottom: 25px;
+    padding: 12px 15px;
+    background-color: #f0f4ff;
+    border-left: 4px solid #0d6efd;
+}
+
+.info-meta div {
+    margin-bottom: 8px;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.info-meta div:last-child {
+    margin-bottom: 0;
+}
+
+.info-label {
+    font-weight: bold;
+    display: inline-block;
+    width: 140px;
+    vertical-align: top;
+}
+
+.info-value {
+    display: inline-block;
+}
+
+/* ===== Info Box ===== */
+.info-box {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+.info-row {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.info-row:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== Hasil Box (Belum Ada Data) ===== */
+.hasil-box {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.hasil-box h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #856404;
+}
+
+.hasil-box p {
+    color: #856404;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.hasil-box h3.no-margin-top {
+    margin-top: 0;
+}
+
+.hasil-row {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ===== NKP Summary (UPDATED: Background Putih + Border) ===== */
+.nkp-summary {
+    margin: 15px auto 25px auto;
+    padding: 20px 15px;
+    background-color: #ffffff;
+    color: #1A3A8A;
+    border: 3px solid #1A3A8A;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 75%;
+}
+
+.nkp-summary h3 {
+    margin: 0 0 20px 0;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 2px solid #1A3A8A;
+    padding-bottom: 12px;
+    color: #1A3A8A;
+}
+
+.nkp-value {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: #1A3A8A;
+}
+
+.nkp-predikat {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+    border-radius: 4px;
+}
+
+/* ✅ PREDIKAT COLORS (Sesuai Chart) */
+.nkp-predikat.sangat-baik {
+    background-color: #0d6efd;
+    border: 2px solid #0a58ca;
+}
+
+.nkp-predikat.baik {
+    background-color: #198754;
+    border: 2px solid #146c43;
+}
+
+.nkp-predikat.cukup {
+    background-color: #ffc107;
+    border: 2px solid #ffca2c;
+    color: #000;
+}
+
+.nkp-predikat.buruk {
+    background-color: #fd7e14;
+    border: 2px solid #dc6a0c;
+}
+
+.nkp-predikat.sangat-buruk {
+    background-color: #dc3545;
+    border: 2px solid #b02a37;
+}
+
+.nkp-meta {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #1A3A8A;
+    font-size: 11px;
+    color: #1A3A8A;
+}
+
+.nkp-meta span {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* ===== Keterangan Predikat Table ===== */
+.keterangan-predikat {
+    margin: 25px 0;
+    page-break-inside: avoid;
+}
+
+.keterangan-predikat h4 {
+    margin: 0 0 12px 0;
+    font-size: 11px;
+    font-weight: bold;
+    color: #1E40AF;
+}
+
+.keterangan-predikat table {
+    margin-top: 8px;
+}
+
+.keterangan-predikat td {
+    padding: 8px 10px;
+    font-size: 10px;
+}
+
+.keterangan-predikat .label-col {
+    width: 30%;
+    text-align: center;
+}
+
+.keterangan-predikat .range-col {
+    width: 35%;
+    text-align: center;
+}
+
+.keterangan-predikat .predikat-col {
+    width: 35%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== Section Title & Subtitle ===== */
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    background-color: #1E40AF;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.section-subtitle {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background-color: #4B5563;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* ===== Table Styles ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+table th {
+    background-color: #1E40AF;
+    color: white;
+    padding: 10px 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    border: 1px solid #163a8f;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+table td {
+    padding: 8px 8px;
+    border: 1px solid #ddd;
+    font-size: 9.5px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+table td.text-center {
+    text-align: center;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f8f9fa;
+}
+
+/* ===== Table Column Widths ===== */
+.w-3-percent { width: 3%; }
+.w-5-percent { width: 5%; }
+.w-6-percent { width: 6%; }
+.w-7-percent { width: 7%; }
+.w-8-percent { width: 8%; }
+.w-10-percent { width: 10%; }
+.w-12-percent { width: 12%; }
+.w-13-percent { width: 13%; }
+.w-15-percent { width: 15%; }
+.w-20-percent { width: 20%; }
+.w-24-percent { width: 24%; }
+.w-25-percent { width: 25%; }
+.w-26-percent { width: 26%; }
+.w-30-percent { width: 30%; }
+.w-35-percent { width: 35%; }
+.w-50-percent { width: 50%; }
+
+/* ===== Table Text Alignment ===== */
+.text-center {
+    text-align: center !important;
+}
+
+.text-left-padded {
+    text-align: left;
+    padding-left: 8px;
+}
+
+/* ===== Predikat Badges (UPDATED: Sesuai Chart) ===== */
+.predikat {
+    display: inline-block;
+    padding: 4px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 8px;
+    border-radius: 4px;
+}
+
+.predikat-sangat-baik { 
+    background-color: #0d6efd;
+    border: 1px solid #0a58ca;
+} 
+
+.predikat-baik { 
+    background-color: #198754;
+    border: 1px solid #146c43;
+} 
+
+.predikat-cukup { 
+    background-color: #ffc107;
+    border: 1px solid #ffca2c;
+    color: #000;
+} 
+
+.predikat-buruk { 
+    background-color: #fd7e14;
+    border: 1px solid #dc6a0c;
+} 
+
+.predikat-sangat-buruk { 
+    background-color: #dc3545;
+    border: 1px solid #b02a37;
+}
+
+.predikat-belum-data {
+    background-color: #6c757d;
+    border: 1px solid #5a6268;
+}
+
+/* ===== Footer ===== */
+.footer-doc {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 2px solid #dee2e6;
+    text-align: center;
+    color: #666;
+    font-size: 9px;
+    page-break-inside: avoid;
+    line-height: 1.6;
+}
+
+.footer-doc p {
+    margin: 5px 0;
+}
+
+.footer-doc p strong {
+    color: #333;
+}
+
+/* ===== Page Break ===== */
+.page-break {
+    page-break-after: always;
+}
+
+/* ===== Avoid Breaking ===== */
+h3, h4, .info-box, .hasil-box, .nkp-summary, .keterangan-predikat {
+    page-break-inside: avoid;
+}
+
+/* ===== Table Border Top ===== */
+.table-border-top {
+    border-top: 2px solid #dee2e6 !important;
+}
+
+.table-border-top td {
+    border-top: 2px solid #dee2e6 !important;
+}
+
+/* ===== Headings ===== */
+h4 {
+    line-height: 1.6;
+    page-break-inside: avoid;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* TAMBAHAN UNTUK ATUR RISIKO MERAH */
+thead {
+    display: table-header-group;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+.section-title.risiko-section {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* TAMBAHAN UNTUK ATUR MANFAAT HIJAU */
+thead {
+    display: table-header-group;
+}
+
+tfoot {
+    display: table-footer-group;
+}
+
+.section-title.manfaat-section {
+    background-color: #1fb054;
+    color: white;
+}
